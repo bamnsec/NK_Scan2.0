@@ -1,12 +1,5 @@
-''''
- __    _  ___   _  _______  _______  _______  __    _    _______        _______ 
-|  |  | ||   | | ||       ||       ||   _   ||  |  | |  |       |      |  _    |
-|   |_| ||   |_| ||  _____||       ||  |_|  ||   |_| |  |____   |      | | |   |
-|       ||      _|| |_____ |       ||       ||       |   ____|  |      | | |   |
-|  _    ||     |_ |_____  ||      _||       ||  _    |  | ______| ___  | |_|   |
-| | |   ||    _  | _____| ||     |_ |   _   || | |   |  | |_____ |   | |       |
-|_|  |__||___| |_||_______||_______||__| |__||_|  |__|  |_______||___| |_______|
 
+#H1 NKScan 2.0
 
 After running NKscan for a period of time, working through the differences between python-nmap and libnmap, and benchmarking performance, it became clear that I needed to write a tool that would work through the scans both quickly and in more detail, and allow a user to make the choice.
 The script calls through the os library to nmap and masscan, and then parses the output into either xml, txt or html, without attempting to parse through any libraries first, to save system resources and make the running of the script more efficient.  At this point the script cannot output masscan results directly to html (there are some technical reasons for this having to do with the absence of stylesheet differentiation in the masscan xml results).  I recommend using the Masscan Web UI developed by Offensive Security for the display of xml files (https://github.com/offensive-security/masscan-web-ui)
