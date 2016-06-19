@@ -1,4 +1,10 @@
-
+ __    _  ___   _  _______  _______  _______  __    _    _______        _______ 
+|  |  | ||   | | ||       ||       ||   _   ||  |  | |  |       |      |  _    |
+|   |_| ||   |_| ||  _____||       ||  |_|  ||   |_| |  |____   |      | | |   |
+|       ||      _|| |_____ |       ||       ||       |   ____|  |      | | |   |
+|  _    ||     |_ |_____  ||      _||       ||  _    |  | ______| ___  | |_|   |
+| | |   ||    _  | _____| ||     |_ |   _   || | |   |  | |_____ |   | |       |
+|_|  |__||___| |_||_______||_______||__| |__||_|  |__|  |_______||___| |_______|
 
 
 After running NKscan for a period of time, working through the differences between python-nmap and libnmap, and benchmarking performance, it became clear that I needed to write a tool that would work through the scans both quickly and in more detail, and allow a user to make the choice.
@@ -100,4 +106,3 @@ optional arguments:
   --nmap_html    Run nmap and output into html format
 
 
-''''
