@@ -18,9 +18,9 @@ When these obstacles are overcome, however, the results can provide an interesti
 of many points of data that came from this research
 
 
-Some notes on the options selected:
+##Some notes on the options selected
 
-Masscan:
+###Masscan:
 -c : Allows the scan to run from a configuration file, which allows for much better option control.
 
 Within this file the following options are set:
@@ -33,7 +33,7 @@ Within this file the following options are set:
 	capture: Sets the scan to capture banners, certs, html and scan for heartbleed vulnerabilities
 
 
-NMAP:
+###NMAP:
 -n : Prevents nmap from attempting to resolve DNS for each IP.  Given the internal structure of 
 what can aptly be described as an intranet in North Korea, there are few DNS entries to begin 
 with, and this option makes the scan significantly more efficient.
@@ -63,7 +63,7 @@ from and so on.
 likely to be blocked if it runs quickly.
 
 
-Dependencies:
+##Dependencies:
 masscan
 https://github.com/robertdavidgraham/masscan
 
@@ -71,7 +71,7 @@ nmap
 
 
 
-Configuration:
+##Configuration:
 The masscan function runs off of a configuration file (nkscan.conf).  Masscan runs its own tcp/ip stack and, as such, is allocated an IP address.  In the configuration file the user can set the local IP that the scan will configure itself to run through.  Personally, I run scans of North Korea through a VPN, but I would also recommend setting a local IP that is not concurrent with the machines on your network that are live, just for some added security. 
 
 If you are running Masscan Web UI I have found that the best results come from running through the instructions posted by Offensive Security, then making the following changes.
